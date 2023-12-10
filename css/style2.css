@@ -1,146 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap");
+:root {
+  --blue : #12d2db;
+  --white : #fcf2fa;
+  --purple : #912a7eaa;
+  --purple-blc : #230622dd;
+  --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
+  --navColor : linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 34, .9));
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 body {
-  background-color: #d5e1ef;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
-
-.card {
-  background-color: #f9fafe;
-  width: 250px;
-  height: 350px;
+nav {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  background-color: red;
+}
+label.logo {
+  padding: 0 80px;
+}
+nav ul {
+  float: right;
+  margin-right: 80px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 13px;
+  text-transform: lowercase;
+}
+a.active, a:hover {
+  background: coral;
+  transition: .5s;
+}
+.checkbtn {
+  line-height: 80px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+.checkbtn i {
+  color: var(--white);
+  padding: 5px;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 30px 0 0 0;
-  transition: transform 400ms;
-  opacity: 0.5;
-  box-shadow: none;
+  transition: .5s ease;
 }
-
-.quote-icon {
-  position: absolute;
-  z-index: 0;
-  opacity: 0.05;
-  left: 3%;
-  top: 0;
+.checkbtn i:hover {
+  background: cadetblue;
 }
-
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 150px;
-  border: 5px solid #f9fafe;
-  box-shadow: 0 0 50px #ccc;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-60px, -60px);
-  z-index: 1;
+#check {
+  display: none;
 }
-
-.header {
-  margin: -20px 0 0 0;
-  text-align: center;
-  z-index: 1;
-}
-
-.name {
-  font-family: "Hammersmith One", sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  margin: 0;
-}
-
-.title {
-  font-family: "Hammersmith One", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 5px 0 0 0;
-  padding: 0 5px;
-  color: #7ccdc5;
-}
-
-.quote-container {
-  margin: 0;
-  height: 100%;
-  z-index: 1;
-  padding: 15px 30px 30px 30px;
-  overflow: hidden;
-}
-
-.quote {
-  width: 100%;
-  height: 95%;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  text-align: center;
-  color: #73808c;
-  margin: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide-active {
-  z-index: 1;
-}
-
-.swiper-slide-active .card {
-  box-shadow: 0 8px 30px -7px #c9dff0;
-  opacity: 1;
-  transform: scale(1.5);
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-button-next:focus,
-.swiper-button-prev:focus {
-  outline: none;
-}
-
-@media (max-height: 400px) {
-  .header {
-    margin: 40px 0 0 0;
+/* responsove code */
+@media (max-width: 952px) {
+  /* table mode */
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
   }
-  .name {
-    font-size: 12px;
-  }
-  .title {
-    font-size: 10px;
-  }
-  .quote-container {
-    padding: 5px 20px 20px 20px;
-  }
-  .quote-icon {
-    width: 75px;
-    height: 75px;
-  }
-  .avatar {
-    width: 100px;
-    height: 100px;
-    transform: translate(-50px, -50px);
+  nav ul li a {
+    font-size: 14px;
   }
 }
 
-
+@media (max-width: 858px) {
+  /* mobile mode */
+  .checkbtn {
+    display: block;
+  }
+   ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: coral;
+    top: 80px;
+    left: -100%;
+    padding-top: 80px;
+    text-align: center;
+    transition: .5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active, a:hover {
+    background: none;
+    color: cadetblue;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
