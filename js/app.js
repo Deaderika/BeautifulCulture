@@ -1,51 +1,25 @@
-// Select The Elements
-var toggle_btn;
-var big_wrapper;
-var hamburger_menu;
-
-function declare() {
-  toggle_btn = document.querySelector(".toggle-btn");
-  big_wrapper = document.querySelector(".big-wrapper");
-  hamburger_menu = document.querySelector(".hamburger-menu");
+document.getElementById('next').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
-const main = document.querySelector("main");
 
-declare();
+const optionMenu = document.querySelector(".select-menu"),
+      selectBtn = optionMenu.querySelector(".select-btn"),
+      options = optionMenu.querySelectorAll(".option"),
+      sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-let dark = false;
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
 
-function toggleAnimation() {
-  // Clone the wrapper
-  dark = !dark;
-  let clone = big_wrapper.cloneNode(true);
-  if (dark) {
-    clone.classList.remove("light");
-    clone.classList.add("dark");
-  } else {
-    clone.classList.remove("dark");
-    clone.classList.add("light");
-  }
-  clone.classList.add("copy");
-  main.appendChild(clone);
+options.forEach(option => {
+    option.addEventListener("click", () => {
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
 
-  document.body.classList.add("stop-scrolling");
-
-  clone.addEventListener("animationend", () => {
-    document.body.classList.remove("stop-scrolling");
-    big_wrapper.remove();
-    clone.classList.remove("copy");
-    // Reset Variables
-    declare();
-    events();
-  });
-}
-
-function events() {
-  toggle_btn.addEventListener("click", toggleAnimation);
-  hamburger_menu.addEventListener("click", () => {
-    big_wrapper.classList.toggle("active");
-  });
-}
-
-events();
+        optionMenu.classList.remove("active");
+    });
+});

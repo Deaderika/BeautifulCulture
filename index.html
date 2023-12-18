@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="css/cssbutton.css"> -->
     <link rel="stylesheet" href="css\swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">      
@@ -22,14 +23,36 @@
             <label for="check" class="checkbtn">
               <i class="bx bx-menu"></i>
             </label>
-            <label class="logo">
+            <label class="logo" style="margin-bottom: 40vh;">
                 <img src="AssetsWebDesign_Techomfest/Logo2.png" alt="">
             </label>
             <ul>
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="#">About</a></li>
               <li><a href="contact2.html">Contact</a></li>
+              <li>
+                <div class="select-menu">
+                  <div class="select-btn">
+                      <span class="sBtn-text">Explore</span>
+                      <i class="bx bx-chevron-down"></i>
+                  </div>
+          
+                  <ul class="options" style="float: left;">
+                      <li class="option">
+                          <span class="option-text">Seni</span>
+                      </li>
+                      <li class="option">
+                          <span class="option-text">Musik</span>
+                      </li>
+                      <li class="option">
+                          <span class="option-text">Kuliner</span>
+                      </li>
+                      <li class="option">
+                          <span class="option-text">Pariwisata</span>
+                      </li>
+                  </ul>
+              </div>
+              </li>
             </ul>
           </nav>
         </header>
@@ -37,90 +60,86 @@
         <div class="showcase-area">
             <div class="left">
               <div class="big-title">
-                <h2>WELCOME TO</h2>
-                <h1>INDONESIA</h1>
+                <p> <span style="font-size: 9vh;"> WELCOME TO </span> <br> <span style="font-size: 8vh;"> INDONESIA </span></p>
               </div>
               <p class="text">
                 Negara Indonesia memiliki keanekaragaman budaya dan kekayaan bahasa yang sangat banyak, dengan kekhasan yang berbeda satu sama lain, dan ketika keanekaragaman dan kekayaan itu menyatu menjadi satu bangsa, maka yang muncul adalah sebuah keindahan.
               </p>
-                <a href="#" class="btn" style="color: black;">EXPLORE</a>
+              <div class="search_wrap search_wrap_1">
+                <div class="search_box">
+                  <input type="text" class="input" placeholder="search...">
+                  <div class="btn btn_common">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="right">
-              <img src="AssetsWebDesign_Techomfest/bigIMG4.png" alt="Person Image" class="person" />
+              <img src="AssetsWebDesign_Techomfest/bigIMG5.png" style="width: 450px;
+              height: 450px;" alt="Person Image" class="person" />
             </div>
           </div>
 
-        
+        <div class="container wlpp mt-5">
           <div class="container">
-          <div class="showcase2-area row justify-content-center">
-            <div class="col-md-2">                  
-                <img src="AssetsWebDesign_Techomfest/Free_Vector___Wayang_kulit_character-removebg-preview.png" alt="">
-            </div>
-            <div class="col-md-1" style="margin-top: 60px;">
-                <a class="a" href=""><p>Kesenian</p></a>
+          <div class="showcase2-area row justify-content-center ">
+            <div class="col-md-3" style="margin-top: 10px;margin-left: 0px;">
+                <a class="a" href=""><p>Seni dan Budaya</p></a>
             </div>  
-            <div class="col-md-2">                  
-                <img src="AssetsWebDesign_Techomfest/Premium_Vector___Couple_wear_jambi_indonesian_traditional_clothes-removebg-preview.png" alt="">
+            <div class="col-md-3" style="margin-top: 10px;">
+                <a class="a" href=""><p>Musik dan Tarian</p></a>
             </div>
-            <div class="col-md-1" style="margin-top: 60px;">
-                <a class="a" href=""><p>Baju Adat</p></a>
+            <div class="col-md-3" style="margin-top: 10px;white-space: nowrap; text-align: center;">
+                <a class="a" href=""><p >Kuliner</p></a>
             </div>
-            <div class="col-md-2">                  
-                <img src="AssetsWebDesign_Techomfest/rumah_adat-removebg-preview.png" alt="">
-            </div>
-            <div class="col-md-1" style="margin-top: 60px;">
-                <a class="a" href=""><p>Rumah Adat</p></a>
-            </div>
-            <div class="col-md-2">                  
-                <img src="AssetsWebDesign_Techomfest/Premium_Vector___Angklung_vector-removebg-preview-removebg-preview.png" alt="">
-            </div>
-            <div class="col-md-1" style="margin-top: 60px;">
-                <a class="a" href=""><p>Alat Musik</p></a>
+            <div class="col-md-3" style="margin-top: 10px;white-space: nowrap;">
+                <a class="a" href=""><p>Pariwisata</p></a>
             </div>
         </div>
+      </div>
       </div>
 
       <div class="container">
         <div class="showcase3-area">
           <div class="big-title2">
               <div class="col-6">
-                <h1>Kesenian Populer</h1>
-                <p>Kesenian budaya Indonesia yang mendunia</p>
-              </div>
-              <div class="col-6" style="margin-left: 24vh;">
-                <button class="btn-42"><span>Explore</span></button>
+                <h1><a href="">Seni dan Kebudayaan</a></h1>
+                <p style="color: white;">Berbagai bentuk ekspresi seni yang telah berkembang selama berabad-abad di berbagai pulau dan etnis di Indonesia. </p>
               </div>
           </div>
 
-          <div class="content2 row">
+          <div class="content2 row mt-5">
               <div class="col-md-4">
                   <img src="AssetsWebDesign_Techomfest/saman2.jpg"alt="">
-                  <h2 style="margin-left: 18px;">Tari Saman</h2>
+                  <h2 style="margin-left: 18px;text-align: center;">Tari Saman</h2>
               </div>
               <div class="col-md-4">
                   <img src="AssetsWebDesign_Techomfest/Reog.jpg" alt="">
-                  <h2 style="margin-left: 18px;">Reog Ponorogo</h2>
+                  <h2 style="margin-left: 18px;text-align: center;">Reog Ponorogo</h2>
               </div>
               <div class="col-md-4">
                   <img src="AssetsWebDesign_Techomfest/wayang.jpg" alt="">
-                  <h2 style="margin-left: 18px;">Wayang Kulit</h2>
+                  <h2 style="margin-left: 18px;text-align: center;">Wayang Kulit</h2>
               </div>
           </div>
         </div> 
+          <div class="mt-4" style="float: right;color: black;">
+            <button class="btn-42"><span>Explore</span></button>
+          </div>
       </div>
 
         <div class="container showcase4-area">
           <div class="big-title4" style="text-align: center;">
-            <h1>Event Nusantara 2023</h1>
-            <p>
-                10 event dan budaya unggulan yang  telah dikurasi <br> dari 291 event usulan Dinas Pariwisata <br> Provinsi se-Indonesia.
+            <h1>Musik dan Tarian</h1>
+            <p style="color: white;">
+                Musik dan tarian Indonesia sangat kaya dan bervariasi <br> mencerminkan keanekaragaman budaya yang ada di seluruh kepulauan. Musik dan tarian tradisional <br> Indonesia tidak hanya menyajikan keindahan seni, tetapi juga mencerminkan sejarah, mitologi, dan kehidupan sehari-hari masyarakat Indonesia.
             </p>
           </div>
 
           <div class="swiper swiperCarousel">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;" >
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/image 1(1).png" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">Penampilan tarian di Pesta Kesenian Bali</h2>
@@ -133,7 +152,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;">
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/image 2(1).png" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">Festival Nasional Reog Ponorogo</h2>
@@ -146,7 +165,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;">
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/image 3(1).png" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">Pelepasan Lampion di Dieng Culture Festival</h2>
@@ -159,7 +178,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;">
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/image 4(1).png" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">
@@ -174,7 +193,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;">
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/Asian Games 2018 - Saman Dance of Aceh.jpg" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">Chief Neurologist, NeuroTech Hospital</h2>
@@ -187,7 +206,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="card">
+                <div class="card" style="background-color: black; border-radius: 20px;">
                   <div class="header">
                     <img src="AssetsWebDesign_Techomfest/Asian Games 2018 - Saman Dance of Aceh.jpg" alt="" style="width: 200px;border-radius: 10px;">
                     <h2 class="title">Sr. Tech Journalist, Digital Frontier</h2>
@@ -210,131 +229,68 @@
           <div class="col-6">
           <img src="AssetsWebDesign_Techomfest/wanita bali 1.png"alt="">
           </div>
-          <div class="title col-6">
+          <div class="title col-6 justify-content-center">
             <h1>
-              38 BAJU ADAT YANG ADA DI INDONESIA 
+              Kuliner
             </h1>
-            <button class="btn-42"><span>Selengkapnya</span></button>
+            <p>
+              Kuliner Indonesia sangat beragam dan kaya akan cita rasa, bahan-bahan unik, serta pengaruh budaya yang berbeda dari setiap daerah. 
+            </p>
+            <button class="btn-42"><span>Explore</span></button>
           </div>
         </div>
 
         <div class="container showcase6-area">
           <div class="content">
-            <div class="title col-6">
+            <div class="title col-6" style="max-width: 100%;">
               <h1>
-                RUMAH ADAT 
+                PARIWISATA 
               </h1>
+              <p>Pariwisata Indonesia menawarkan berbagai pengalaman unik dan menarik karena kekayaan alamnya yang luar biasa, warisan budayanya yang beragam, serta keramahan masyarakatnya. </p>
+              <button class="btn-42"><span>Explore</span></button>
             </div>
-              <p class="text">Indonesia juga memiliki sekitar 34 <br> rumah adat yang berbeda-beda di setiap provinsi.</p>
-              <button class="btn-42"><span>Selengkapnya</span></button>
-            </div>
+          </div>
             <div class="col-6">
               <img src="AssetsWebDesign_Techomfest/image 5.png" style="height: 600px;" alt="">
             </div>
         </div>
         
-        <div class="container showcase7-area">
-          <div class="col-6">
-          <img src="AssetsWebDesign_Techomfest/wanita bali 1.png" style="height: 600px;" alt="">
-          </div>
-          <div class="title col-6">
-            <h1>
-              ALAT MUSIK TRADISIONAL
-            </h1>
-            <a href="#showcase8">
-              <button class="btn-42"><span>Selengkapnya</span></button>
-            </a>
-          </div>
-        </div>
-        
-        <div class="container showcase8-area" id="showcase8">
-          <div class="title2 col-4">
-            <h1>
-              ALAT MUSIK TRADISIONAL
-            </h1>
-            <p>Alat musik tradisional adalah sebuah instrumen musik atau alat musik yang berkembang pada suatu daerah dan sudah berkembang secara turun temurun.</p>
-          </div>
-          <div class="col-8">
-              <div class="carrousel">
-                <div class="cards-8">
-                  <div class="img-s8">
-                    <img src="AssetsWebDesign_Techomfest/gamelan.png" alt="">
-                  </div>
-                  <div class="name-s8">
-                    <h2>Gamelan</h2>
-                    <h3>Jawa</h3>
-                  </div>
-                </div>
-                <div class="cards-8">
-                  <div class="img-s8">
-                    <img src="AssetsWebDesign_Techomfest/gamelan.png" alt="">
-                  </div>
-                  <div class="name-s8">
-                    <h2>Angklung</h2>
-                  </div>
-                </div>
-                <div class="cards-8">
-                  <div class="img-s8">
-                    <img src="AssetsWebDesign_Techomfest/gamelan.png" alt="">
-                  </div>
-                  <div class="name-s8">
-                    <h2>Angklung</h2>
-                  </div>
-                </div>
-                <div class="cards-8">
-                  <div class="img-s8">
-                    <img src="AssetsWebDesign_Techomfest/gamelan.png" alt="">
-                  </div>
-                  <div class="name-s8">
-                    <h2>Angklung</h2>
-                  </div>
-                </div>
-                <div class="cards-8">
-                  <div class="img-s8">
-                    <img src="AssetsWebDesign_Techomfest/gamelan.png" alt="">
-                  </div>
-                  <div class="name-s8">
-                    <h2>Angklung</h2>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
+        <div class="showcase7-area">
+
+      </div>
     </div>
 
-
-      <footer class="footer"> 
+        <footer class="footer"> 
           <div class="container">
-            <div class="row" style="display: flex; margin-left: 50px;">
-              <div class="logo">
-                <img src="AssetsWebDesign_Techomfest/Logo.png" alt="">
+            <div class="row" style="display: flex; margin-left: 30vh;">
+              <div class="sosmed">
+                <div class="logo-footer">
+                  <img src="AssetsWebDesign_Techomfest/Logo.png" alt="">
+                </div>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
               </div>
               <div class="footer-col">
-                <h4>explore</h4>
+                <h4>EXPLORE</h4>
                 <ul>
-                  <li><a href="#">Kesenian</a></li>
-                  <li><a href="#">Baju Adat</a></li>
-                  <li><a href="#">Rumah Adat</a></li>
-                  <li><a href="#">Alat Musik</a></li>
+                  <li><a href="#">Seni dan Kebudayaan</a></li>
+                  <li><a href="#">Musik dan Tarian</a></li>
+                  <li><a href="#">Kuliner</a></li>
+                  <li><a href="#">Pariwista</a></li>
                 </ul>
               </div>
               <div class="footer-col">
-                <h4>Menu</h4>
+                <h4>MENU</h4>
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Contact</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="#">Exprole</a></li>
                 </ul>
-              </div>
-              <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -349,6 +305,7 @@
     <script src="js/swiper-bundle.min.js"></script>
 
 
+    <script src="js/app.js"></script>
     <!-- JavaScript -->
     <!-- <script src="js/script.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
